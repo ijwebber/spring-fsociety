@@ -22,10 +22,10 @@ public class FsocietyController {
         String name = request.getParameter("name");
 
         if (name == null || name == "") {
-            name = "world";
+            name = "blank";
         }
 
-        model.addAttribute("message", name);
+        model.addAttribute("name", name);
         return "welcome";
     }
 }
